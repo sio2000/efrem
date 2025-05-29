@@ -1,18 +1,15 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  ChartLineUp, 
+  ChartLine,
   Users, 
   Warning, 
-  Trophy, 
-  Heartbeat,
-  Calendar
+  Trophy
 } from '@phosphor-icons/react';
 
 const CoachDashboardDemo = () => {
   const stats = [
     { icon: <Users size={24} />, label: 'Συνολικοί Αθλητές', value: '24' },
-    { icon: <ChartLineUp size={24} />, label: 'Μέση Απόδοση', value: '87%' },
+    { icon: <ChartLine size={24} />, label: 'Μέση Απόδοση', value: '87%' },
     { icon: <Warning size={24} />, label: 'Ειδοποιήσεις', value: '3' },
     { icon: <Trophy size={24} />, label: 'Επιτυχίες', value: '156' },
   ];

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { UsersThree, ClipboardText, ChartLineUp, Brain, ListChecks } from '@phosphor-icons/react';
 

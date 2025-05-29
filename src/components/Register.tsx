@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Register = () => (
   <div className="min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 flex flex-col items-center justify-center py-10">
     <div className="relative w-full max-w-2xl mb-10 flex items-center justify-center overflow-hidden rounded-3xl shadow-lg">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Envelope, Lock, User } from '@phosphor-icons/react';
+import { Envelope, Lock } from '@phosphor-icons/react';
 
 const Login = () => {
   const [formData, setFormData] = useState({

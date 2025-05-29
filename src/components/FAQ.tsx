@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CaretDown } from '@phosphor-icons/react';
 import FAQHero from './FAQHero';
