@@ -49,32 +49,35 @@ const CoachCapabilities = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold gradient-text mb-4">Δυνατότητες Προπονητή</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-4 drop-shadow-lg">Δυνατότητες Προπονητή</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Ανακαλύψτε πώς η πλατφόρμα μας μπορεί να βοηθήσει στην βελτίωση της απόδοσης της ομάδας σας
           </p>
         </motion.div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.1, type: 'spring', stiffness: 80 }}
+              whileHover={{ scale: 1.05, rotate: -2 }}
+              whileTap={{ scale: 0.97, rotate: 2 }}
               className="relative group"
             >
               <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl blur-xl"
                    style={{ background: `linear-gradient(to right, ${feature.color.split(' ')[1]}, ${feature.color.split(' ')[3]})` }}></div>
-              <div className="relative p-8 glass-effect rounded-2xl card-hover overflow-hidden">
-                <div className="absolute inset-0 opacity-10">
-                  <img src={feature.image} alt={feature.title} className="w-full h-full object-cover" />
+              <div className="relative p-8 glass-effect rounded-2xl card-hover overflow-hidden border-2 border-transparent group-hover:border-blue-400 transition-all duration-300 shadow-2xl">
+                <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                  <img src={feature.image} alt={feature.title} className="w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-500" />
                 </div>
-                <div className="relative">
-                  <div className="mb-4">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                <div className="relative z-10">
+                  <div className="mb-4 animate-bounce-slow group-hover:animate-bounce">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2 gradient-text drop-shadow-sm">{feature.title}</h3>
+                  <p className="text-gray-700 font-medium drop-shadow-sm">{feature.description}</p>
                 </div>
               </div>
             </motion.div>

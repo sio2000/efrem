@@ -39,7 +39,7 @@ const FAQ = () => {
   const filteredFaqs = faqs.filter(faq => faq.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 py-8 px-4">
       <div className="max-w-4xl mx-auto">
         <FAQHero />
         <motion.div
@@ -47,20 +47,19 @@ const FAQ = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Συχνές Ερωτήσεις</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-4xl font-bold gradient-text mb-4 drop-shadow-lg">Συχνές Ερωτήσεις</h1>
+          <p className="text-xl text-gray-700">
             Βρείτε απαντήσεις σε συχνές ερωτήσεις για τη χρήση της πλατφόρμας
           </p>
         </motion.div>
-
         {/* Category Tabs */}
         <div className="flex justify-center mb-8">
-          <div className="inline-flex rounded-lg bg-white p-1 shadow-md">
+          <div className="inline-flex rounded-lg bg-white/80 glass-effect p-1 shadow-lg border-2 border-transparent">
             <button
               onClick={() => setActiveCategory('Coach')}
-              className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-6 py-2 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 ${
                 activeCategory === 'Coach'
-                  ? 'bg-blue-600 text-white'
+                  ? 'bg-blue-600 text-white shadow-md scale-105'
                   : 'text-gray-600 hover:text-blue-600'
               }`}
             >
@@ -68,9 +67,9 @@ const FAQ = () => {
             </button>
             <button
               onClick={() => setActiveCategory('Athlete')}
-              className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-6 py-2 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 ${
                 activeCategory === 'Athlete'
-                  ? 'bg-blue-600 text-white'
+                  ? 'bg-blue-600 text-white shadow-md scale-105'
                   : 'text-gray-600 hover:text-blue-600'
               }`}
             >
@@ -78,26 +77,25 @@ const FAQ = () => {
             </button>
           </div>
         </div>
-
         {/* FAQ Items */}
-        <div className="space-y-4">
+        <div className="space-y-6">
           {filteredFaqs.map((faq, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-xl shadow-md overflow-hidden"
+              className="bg-white/80 glass-effect rounded-xl shadow-xl overflow-hidden border-2 border-transparent hover:border-blue-400 transition-all duration-300"
             >
               <button
                 onClick={() => setActiveIndex(activeIndex === index ? null : index)}
-                className="w-full px-6 py-4 flex items-center justify-between text-left"
+                className="w-full px-6 py-4 flex items-center justify-between text-left group"
               >
-                <span className="text-lg font-medium text-gray-900">{faq.question}</span>
+                <span className="text-lg font-medium text-gray-900 group-hover:text-blue-700 transition-colors">{faq.question}</span>
                 <CaretDown
                   size={24}
-                  className={`transform transition-transform ${
-                    activeIndex === index ? 'rotate-180' : ''
+                  className={`transform transition-transform group-hover:text-blue-600 ${
+                    activeIndex === index ? 'rotate-180 text-blue-600' : ''
                   }`}
                 />
               </button>
@@ -110,14 +108,13 @@ const FAQ = () => {
                     transition={{ duration: 0.3 }}
                     className="px-6 pb-4"
                   >
-                    <p className="text-gray-600">{faq.answer}</p>
+                    <p className="text-gray-700 font-medium drop-shadow-sm">{faq.answer}</p>
                   </motion.div>
                 )}
               </AnimatePresence>
             </motion.div>
           ))}
         </div>
-
         {/* Contact Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -125,8 +122,8 @@ const FAQ = () => {
           transition={{ delay: 0.4 }}
           className="mt-12 text-center"
         >
-          <p className="text-gray-600 mb-4">Δεν βρήκατε την απάντηση που αναζητάτε;</p>
-          <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
+          <p className="text-gray-700 mb-4">Δεν βρήκατε την απάντηση που αναζητάτε;</p>
+          <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg focus:ring-2 focus:ring-blue-300">
             Επικοινωνήστε μαζί μας
           </button>
         </motion.div>
