@@ -1,27 +1,34 @@
+import cyclists from '../../assets/cyclists.jpg';
+import manatgym from '../../assets/manatgym.jpg';
+import training from '../../assets/training.jpg';
+import womanrunner from '../../assets/womanrunner.jpg';
+import womantraining from '../../assets/womantraining.jpg';
+import womantrainningoutside from '../../assets/womantrainningoutside.jpg';
+
 const gallery = [
   {
     title: 'Ποδηλάτες',
-    image: '/assets/cyclists.jpg',
+    image: cyclists,
   },
   {
     title: 'Άνδρας στο γυμναστήριο',
-    image: '/assets/manatgym.jpg',
+    image: manatgym,
   },
   {
     title: 'Προπόνηση',
-    image: '/assets/training.jpg',
+    image: training,
   },
   {
     title: 'Γυναίκα δρομέας',
-    image: '/assets/womanrunner.jpg',
+    image: womanrunner,
   },
   {
     title: 'Γυναίκα σε προπόνηση',
-    image: '/assets/womantraining.jpg',
+    image: womantraining,
   },
   {
     title: 'Γυναίκα προπονείται έξω',
-    image: '/assets/womantrainningoutside.jpg',
+    image: womantrainningoutside,
   },
 ];
 
