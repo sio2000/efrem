@@ -925,7 +925,7 @@ const CoachDashboardDemo = () => {
         {filteredAthletes.length === 0 ? (
           <div className="text-center text-lg text-blue-200 py-12">No athletes found.</div>
         ) : (
-          filteredAthletes.map((athlete, idx) => (
+          filteredAthletes.map((athlete) => (
             <AthleteCard athlete={athlete} key={athlete.id} onShowStats={() => setSelectedAthleteForStats(athlete)} />
           ))
         )}
