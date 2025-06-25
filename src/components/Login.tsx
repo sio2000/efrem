@@ -30,20 +30,14 @@ const Login = () => {
         className="max-w-md w-full space-y-8"
       >
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Σύνδεση</h2>
-          <p className="mt-2 text-gray-600">
-            Επιλέξτε τον τύπο λογαριασμού σας
-          </p>
+          <h2 className="text-3xl font-bold text-gray-900">Login</h2>
+          <p className="mt-2 text-gray-600">Select your account type</p>
         </div>
 
         {/* Role Selection */}
         <div className="flex space-x-4">
-          <button className="flex-1 py-3 px-4 border border-blue-600 rounded-lg text-blue-600 font-medium hover:bg-blue-50 transition-colors">
-            Προπονητής
-          </button>
-          <button className="flex-1 py-3 px-4 border border-blue-600 rounded-lg text-blue-600 font-medium hover:bg-blue-50 transition-colors">
-            Αθλητής
-          </button>
+          <button className="flex-1 py-3 px-4 border border-blue-600 rounded-lg text-blue-600 font-medium hover:bg-blue-50 transition-colors">Coach</button>
+          <button className="flex-1 py-3 px-4 border border-blue-600 rounded-lg text-blue-600 font-medium hover:bg-blue-50 transition-colors">Athlete</button>
         </div>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-6">
@@ -71,7 +65,7 @@ const Login = () => {
 
             <div>
               <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                Κωδικός
+                Password
               </label>
               <div className="mt-1 relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -99,15 +93,11 @@ const Login = () => {
                 type="checkbox"
                 className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
               />
-              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
-                Να με θυμάσαι
-              </label>
+              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">Remember me</label>
             </div>
 
             <div className="text-sm">
-              <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
-                Ξεχάσατε τον κωδικό σας;
-              </a>
+              <a href="#" className="font-medium text-blue-600 hover:text-blue-500">Forgot your password?</a>
             </div>
           </div>
 
@@ -116,7 +106,7 @@ const Login = () => {
               type="submit"
               className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
-              Σύνδεση
+              Login
             </button>
           </div>
         </form>
@@ -127,7 +117,7 @@ const Login = () => {
               <div className="w-full border-t border-gray-300" />
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-gray-50 text-gray-500">Ή συνδεθείτε με</span>
+              <span className="px-2 bg-gray-50 text-gray-500">Or sign in with</span>
             </div>
           </div>
 

@@ -5,20 +5,20 @@ const AthleteCapabilities = () => {
   const features = [
     {
       icon: <ClipboardText size={32} weight="duotone" className="text-blue-600" />,
-      title: 'Παρακολούθηση Προόδου',
-      description: 'Δείτε την πρόοδό σας με λεπτομερή στατιστικά και γραφήματα για κάθε μέτρο απόδοσης.',
+      title: 'Progress Tracking',
+      description: 'See your progress with detailed stats and charts for every performance metric.',
       color: 'from-blue-500 to-blue-600'
     },
     {
       icon: <ChartLineUp size={32} weight="duotone" className="text-emerald-600" />,
-      title: 'Προσωπικά Στόχοι',
-      description: 'Ορίστε και παρακολουθήστε τους προσωπικούς σας στόχους και τις επιδόσεις σας.',
+      title: 'Personal Goals',
+      description: 'Set and track your personal goals and achievements.',
       color: 'from-emerald-500 to-emerald-600'
     },
     {
       icon: <ChatTeardropText size={32} weight="duotone" className="text-purple-600" />,
-      title: 'Επικοινωνία με Προπονητή',
-      description: 'Επικοινωνήστε άμεσα με τον προπονητή σας και λάβετε ανατροφοδότηση για την απόδοσή σας.',
+      title: 'Coach Communication',
+      description: 'Communicate directly with your coach and get feedback on your performance.',
       color: 'from-purple-500 to-purple-600'
     }
   ];
@@ -32,9 +32,9 @@ const AthleteCapabilities = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold gradient-text mb-4 drop-shadow-lg">Δυνατότητες Αθλητή</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-4 drop-shadow-lg">Athlete Capabilities</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ανακαλύψτε πώς η πλατφόρμα μας μπορεί να βοηθήσει στην βελτίωση της προσωπικής σας απόδοσης
+            Discover how our platform can help you improve your personal performance
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

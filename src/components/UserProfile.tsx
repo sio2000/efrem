@@ -65,7 +65,7 @@ const UserProfile: React.FC<UserProfileProps> = ({
               <button
                 className="absolute bottom-2 right-2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 shadow-lg transition-all"
                 onClick={() => setIsEditing(!isEditing)}
-                title="Επεξεργασία προφίλ"
+                title="Edit Profile"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ const UserProfile: React.FC<UserProfileProps> = ({
               <p className="text-blue-700 font-mono text-lg">@{username}</p>
               <div className="flex items-center gap-2 mt-3">
                 <Trophy className="text-yellow-500 animate-bounce" />
-                <span className="text-gray-800 font-semibold text-lg">{points} πόντοι</span>
+                <span className="text-gray-800 font-semibold text-lg">{points} points</span>
               </div>
             </div>
           </div>

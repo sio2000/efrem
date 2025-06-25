@@ -27,7 +27,7 @@ function App() {
               <Inspiration />
               <div className="flex justify-center my-8">
                 <Link to="/athlete" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg font-bold rounded-xl shadow-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 focus:ring-4 focus:ring-blue-300 focus:outline-none">
-                  Δείτε Προφίλ Αθλητή
+                  View Athlete Profile
                 </Link>
               </div>
               <CoachCapabilities />

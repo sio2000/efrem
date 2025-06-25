@@ -39,10 +39,8 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Επικοινωνήστε μαζί μας</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Έχετε ερωτήσεις; Θα χαρούμε να σας απαντήσουμε
-          </p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Have questions? We'd love to answer them</p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -55,7 +53,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  Όνομα
+                  Name
                 </label>
                 <input
                   type="text"
@@ -85,7 +83,7 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                  Θέμα
+                  Subject
                 </label>
                 <input
                   type="text"
@@ -100,7 +98,7 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Μήνυμα
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -117,7 +115,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
               >
-                Αποστολή Μηνύματος
+                Send Message
               </button>
             </form>
           </motion.div>
@@ -129,7 +127,7 @@ const Contact = () => {
             className="space-y-8"
           >
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Στοιχεία Επικοινωνίας</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
               
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
@@ -147,7 +145,7 @@ const Contact = () => {
                     <Phone size={24} className="text-blue-600" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-600">Τηλέφωνο</p>
+                    <p className="text-sm text-gray-600">Phone</p>
                     <p className="text-gray-900">+30 210 1234567</p>
                   </div>
                 </div>
@@ -157,8 +155,8 @@ const Contact = () => {
                     <MapPin size={24} className="text-blue-600" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-600">Διεύθυνση</p>
-                    <p className="text-gray-900">Αθήνα, Ελλάδα</p>
+                    <p className="text-sm text-gray-600">Address</p>
+                    <p className="text-gray-900">Athens, Greece</p>
                   </div>
                 </div>
               </div>
@@ -166,7 +164,7 @@ const Contact = () => {
 
             {/* Social Media */}
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Ακολουθήστε μας</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Follow Us</h2>
               <div className="flex space-x-4">
                 <a
                   href="#"

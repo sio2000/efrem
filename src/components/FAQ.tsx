@@ -15,6 +15,11 @@ const FAQ = () => {
 
   const faqs: FAQItem[] = [
     {
+      question: 'How often should I fill out the wellness questionnaires?',
+      answer: 'It is recommended to fill out the wellness questionnaires before and after each training session. This helps monitor your physical condition and prevent injuries.',
+      category: 'Athlete'
+    },
+    {
       question: 'Πώς μπορώ να προσθέσω νέους αθλητές στην πλατφόρμα;',
       answer: 'Μπορείτε να προσθέσετε νέους αθλητές μέσω του μενού "Διαχείριση Ομάδας". Κάντε κλικ στο κουμπί "Προσθήκη Αθλητή" και συμπληρώστε τα απαραίτητα στοιχεία. Οι αθλητές θα λάβουν email με οδηγίες για την ενεργοποίηση του λογαριασμού τους.',
       category: 'Coach'
@@ -47,10 +52,8 @@ const FAQ = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold gradient-text mb-4 drop-shadow-lg">Συχνές Ερωτήσεις</h1>
-          <p className="text-xl text-gray-700">
-            Βρείτε απαντήσεις σε συχνές ερωτήσεις για τη χρήση της πλατφόρμας
-          </p>
+          <h1 className="text-4xl font-bold gradient-text mb-4 drop-shadow-lg">Frequently Asked Questions</h1>
+          <p className="text-xl text-gray-700">Find answers to common questions about using the platform</p>
         </motion.div>
         {/* Category Tabs */}
         <div className="flex justify-center mb-8">
@@ -63,7 +66,7 @@ const FAQ = () => {
                   : 'text-gray-600 hover:text-blue-600'
               }`}
             >
-              Για Προπονητές
+              For Coaches
             </button>
             <button
               onClick={() => setActiveCategory('Athlete')}
@@ -73,7 +76,7 @@ const FAQ = () => {
                   : 'text-gray-600 hover:text-blue-600'
               }`}
             >
-              Για Αθλητές
+              For Athletes
             </button>
           </div>
         </div>
@@ -122,9 +125,9 @@ const FAQ = () => {
           transition={{ delay: 0.4 }}
           className="mt-12 text-center"
         >
-          <p className="text-gray-700 mb-4">Δεν βρήκατε την απάντηση που αναζητάτε;</p>
+          <p className="text-gray-700 mb-4">Didn't find the answer you were looking for?</p>
           <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg focus:ring-2 focus:ring-blue-300">
-            Επικοινωνήστε μαζί μας
+            Contact Us
           </button>
         </motion.div>
       </div>

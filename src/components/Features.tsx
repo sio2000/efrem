@@ -23,8 +23,8 @@ const Features = () => (
     <div className="relative w-full max-w-2xl mx-auto mb-10 flex items-center justify-center overflow-hidden rounded-3xl shadow-2xl glass-effect border-4 border-transparent hover:border-blue-400 transition-all duration-500">
       <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="features hero" className="absolute inset-0 w-full h-full object-cover opacity-40 scale-110" />
       <div className="relative z-10 text-center py-12 w-full">
-        <h1 className="text-4xl md:text-5xl font-bold gradient-text drop-shadow mb-4">Χαρακτηριστικά</h1>
-        <p className="text-lg md:text-2xl text-gray-800 font-medium drop-shadow">Όλες οι δυνατότητες της πλατφόρμας μας σε ένα σημείο!</p>
+        <h1 className="text-4xl md:text-5xl font-bold gradient-text drop-shadow mb-4">Features</h1>
+        <p className="text-lg md:text-2xl text-gray-800 font-medium drop-shadow">All the features of our platform in one place!</p>
       </div>
     </div>
     <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">

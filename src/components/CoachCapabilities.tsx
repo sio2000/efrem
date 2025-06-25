@@ -5,36 +5,36 @@ const CoachCapabilities = () => {
   const features = [
     {
       icon: <UsersThree size={32} weight="duotone" className="text-purple-600" />,
-      title: 'Διαχείριση Ομάδας',
-      description: 'Διαχειριστείτε εύκολα τους αθλητές σας, παρακολουθήστε την πρόοδό τους και δημιουργήστε προσαρμοσμένα προγράμματα προπόνησης.',
+      title: 'Team Management',
+      description: 'Easily manage your athletes, track their progress, and create custom training programs.',
       color: 'from-purple-500 to-purple-600',
       image: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: <ClipboardText size={32} weight="duotone" className="text-blue-600" />,
-      title: 'Παρακολούθηση Απόδοσης',
-      description: 'Μετρήστε και αναλύστε την απόδοση των αθλητών σας με λεπτομερή στατιστικά και γραφήματα.',
+      title: 'Performance Tracking',
+      description: "Measure and analyze your athletes' performance with detailed stats and charts.",
       color: 'from-blue-500 to-blue-600',
       image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: <ChartLineUp size={32} weight="duotone" className="text-emerald-600" />,
-      title: 'Ανάλυση Δεδομένων',
-      description: 'Λάβετε βαθιές πληροφορίες από τα δεδομένα των αθλητών σας για να βελτιστοποιήσετε τις προπονήσεις.',
+      title: 'Data Analysis',
+      description: "Gain deep insights from your athletes' data to optimize training.",
       color: 'from-emerald-500 to-emerald-600',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: <Brain size={32} weight="duotone" className="text-amber-600" />,
-      title: 'Έξυπνες Προτάσεις',
-      description: 'Λάβετε AI-powered προτάσεις για βελτίωση των προγραμμάτων προπόνησης και πρόληψης τραυματισμών.',
+      title: 'Smart Suggestions',
+      description: 'Get AI-powered suggestions to improve training programs and prevent injuries.',
       color: 'from-amber-500 to-amber-600',
       image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: <ListChecks size={32} weight="duotone" className="text-rose-600" />,
-      title: 'Παρακολούθηση Ευεξίας',
-      description: 'Παρακολουθήστε την φυσική κατάσταση των αθλητών σας και προσαρμόστε τις προπονήσεις ανάλογα.',
+      title: 'Wellness Monitoring',
+      description: "Monitor your athletes' physical condition and adjust training accordingly.",
       color: 'from-rose-500 to-rose-600',
       image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     }
@@ -49,9 +49,9 @@ const CoachCapabilities = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold gradient-text mb-4 drop-shadow-lg">Δυνατότητες Προπονητή</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-4 drop-shadow-lg">Coach Capabilities</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ανακαλύψτε πώς η πλατφόρμα μας μπορεί να βοηθήσει στην βελτίωση της απόδοσης της ομάδας σας
+            Discover how our platform can help improve your team's performance
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

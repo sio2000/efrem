@@ -12,22 +12,22 @@ const Hero = () => {
   const features = [
     {
       icon: <ChartLineUp size={32} weight="duotone" className="text-blue-600" />,
-      title: "Ανάλυση Απόδοσης",
-      description: "Παρακολούθηση και ανάλυση των μετρήσεων απόδοσης",
+      title: "Performance Analysis",
+      description: "Monitor and analyze performance metrics",
       color: "from-blue-500 to-blue-600",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: <Users size={32} weight="duotone" className="text-purple-600" />,
-      title: "Διαχείριση Ομάδας",
-      description: "Διαχείριση αθλητών και παρακολούθηση προόδου",
+      title: "Team Management",
+      description: "Manage athletes and track progress",
       color: "from-purple-500 to-purple-600",
       image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: <Brain size={32} weight="duotone" className="text-emerald-600" />,
-      title: "Έξυπνες Αναλύσεις",
-      description: "AI-powered αναλύσεις για βέλτιστες αποφάσεις",
+      title: "Smart Insights",
+      description: "AI-powered analytics for optimal decisions",
       color: "from-emerald-500 to-emerald-600",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-emerald-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ const Hero = () => {
             What the Coach Sees
           </h1>
           <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            Η πλατφόρμα παρακολούθησης αθλητικής απόδοσης που βοηθά τους προπονητές να δουν τα πάντα
+            The sports performance monitoring platform that helps coaches see everything
           </p>
         </motion.div>
 
@@ -98,13 +98,13 @@ const Hero = () => {
             className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/25"
           >
             <RocketLaunch size={24} className="mr-2" />
-            Ξεκινήστε Δωρεάν
+            Get Started Free
           </Link>
           <Link
             to="/features"
             className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-gray-700 glass-effect rounded-xl hover:bg-white/90 transition-all duration-300"
           >
-            Μάθετε Περισσότερα
+            Learn More
             <ArrowRight size={24} className="ml-2" />
           </Link>
         </motion.div>

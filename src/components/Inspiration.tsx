@@ -7,27 +7,27 @@ import womantrainningoutside from '../../assets/womantrainningoutside.jpg';
 
 const gallery = [
   {
-    title: 'Ποδηλάτες',
+    title: 'Cyclists',
     image: cyclists,
   },
   {
-    title: 'Άνδρας στο γυμναστήριο',
+    title: 'Man at Gym',
     image: manatgym,
   },
   {
-    title: 'Προπόνηση',
+    title: 'Training',
     image: training,
   },
   {
-    title: 'Γυναίκα δρομέας',
+    title: 'Woman Runner',
     image: womanrunner,
   },
   {
-    title: 'Γυναίκα σε προπόνηση',
+    title: 'Woman Training',
     image: womantraining,
   },
   {
-    title: 'Γυναίκα προπονείται έξω',
+    title: 'Woman Training Outside',
     image: womantrainningoutside,
   },
 ];

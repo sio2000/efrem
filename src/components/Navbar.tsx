@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import { Medal } from '@phosphor-icons/react';
+import logo from '../../assets/logo.png';
 
 const navLinks = [
-  { to: '/resources', label: 'Πόροι' },
-  { to: '/athlete', label: 'Αθλητής' },
+  { to: '/resources', label: 'Resources' },
+  { to: '/athlete', label: 'Athletes' },
   { to: '/coach-dashboard', label: 'Coach Dashboard' },
   { to: '/athlete-dashboard', label: 'Athlete Dashboard' },
   { to: '/faq', label: 'FAQ' },
@@ -37,7 +37,7 @@ const Navbar = () => {
     >
       <nav className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 group">
-          <Medal className="h-9 w-9 text-blue-600 mr-2 drop-shadow-lg animate-bounce-slow group-hover:animate-bounce" weight="fill" />
+          <img src={logo} alt="Logo" className="h-16 w-16 object-contain mr-2 drop-shadow-lg" />
           <span className="text-2xl font-extrabold text-blue-700 tracking-tight drop-shadow-sm group-hover:text-purple-700 transition-colors duration-300">What the Coach Sees</span>
         </Link>
         {/* Desktop Navigation */}
