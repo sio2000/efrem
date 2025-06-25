@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Users, ChartLineUp, Warning, Trophy, UserCircle, Info, WarningCircle, CheckCircle, ShieldWarning, MagnifyingGlass, SoccerBall, Basketball, Volleyball } from '@phosphor-icons/react';
+import { Users, ChartLineUp, Warning, Trophy, WarningCircle, CheckCircle, ShieldWarning, MagnifyingGlass, SoccerBall, Basketball, Volleyball } from '@phosphor-icons/react';
 import React, { useState } from 'react';
 
 const stats = [
@@ -563,7 +563,7 @@ const SorenessLocationCard = ({ location }: { location: string }) => {
   );
 };
 
-const SprintChart = ({ data, avg, period }: { data: number[], avg: number, period: 'week' | 'month' }) => {
+const SprintChart = ({ data, avg }: { data: number[], avg: number }) => {
   const days = ['Monday', 'Tuesday', 'Wedn.', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   return (
     <svg width="220" height="100" viewBox="0 0 220 100">
@@ -835,9 +835,9 @@ const CoachDashboardDemo = () => {
             {filteredTests.length === 0 ? (
               <div className="text-center text-lg text-blue-300 py-12">No test results found.</div>
             ) : (
-              filteredTests.map((test, idx) => (
+              filteredTests.map((test) => (
                 <div
-                  key={test.athleteId + test.testName + test.date + idx}
+                  key={test.athleteId + test.testName + test.date}
                   className="grid grid-cols-2 md:grid-cols-6 gap-2 px-6 py-3 items-center hover:bg-blue-50/60 transition-all duration-150"
                   style={{ fontSize: '1rem' }}
                 >
@@ -954,12 +954,12 @@ const CoachDashboardDemo = () => {
               <div className="rounded-2xl bg-gradient-to-br from-rose-200 to-rose-100 p-3 border border-rose-300 shadow flex flex-col items-center w-full max-w-xs mx-auto">
                 <div className="font-bold text-sm mb-1 text-gray-800">Last Week</div>
                 <div className="font-bold text-base mb-1 text-gray-900">Sprint</div>
-                <SprintChart data={selectedAthleteForStats.sprintTimes.week} avg={selectedAthleteForStats.sprintTimes.week.reduce((a,b)=>a+b,0)/selectedAthleteForStats.sprintTimes.week.length} period="week" />
+                <SprintChart data={selectedAthleteForStats.sprintTimes.week} avg={selectedAthleteForStats.sprintTimes.week.reduce((a,b)=>a+b,0)/selectedAthleteForStats.sprintTimes.week.length} />
               </div>
               <div className="rounded-2xl bg-gradient-to-br from-rose-200 to-rose-100 p-3 border border-rose-300 shadow flex flex-col items-center w-full max-w-xs mx-auto">
                 <div className="font-bold text-sm mb-1 text-gray-800">Last months</div>
                 <div className="font-bold text-base mb-1 text-gray-900">Sprint</div>
-                <SprintChart data={selectedAthleteForStats.sprintTimes.month} avg={selectedAthleteForStats.sprintTimes.month.reduce((a,b)=>a+b,0)/selectedAthleteForStats.sprintTimes.month.length} period="month" />
+                <SprintChart data={selectedAthleteForStats.sprintTimes.month} avg={selectedAthleteForStats.sprintTimes.month.reduce((a,b)=>a+b,0)/selectedAthleteForStats.sprintTimes.month.length} />
               </div>
               {/* Psychological Charts */}
               <PsychologicalChart label="Motivation" data={selectedAthleteForStats.psychological.motivation} />
